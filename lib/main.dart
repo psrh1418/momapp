@@ -115,6 +115,7 @@ class _VoiceHomeState extends State<VoiceHome> {
             FloatingActionButton(
               onPressed: () {
                 if (_isAvailable && !_isListening)
+                  print("start program");
                   _speechRecognition
                       .listen(locale: "en_US")
                       .then((result) => print('$result'));
