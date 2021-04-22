@@ -95,6 +95,7 @@ class _VoiceHomeState extends State<VoiceHome> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //clear icon
             FloatingActionButton(
               onPressed: () {
                 if (_isListening)
@@ -112,6 +113,7 @@ class _VoiceHomeState extends State<VoiceHome> {
             SizedBox(
               width: 50,
             ),
+            //record icon
             FloatingActionButton(
               onPressed: () {
                 if (_isAvailable && !_isListening) print("start program");
@@ -124,6 +126,7 @@ class _VoiceHomeState extends State<VoiceHome> {
             SizedBox(
               width: 50,
             ),
+            //stop icon
             FloatingActionButton(
               onPressed: () {
                 if (_isListening)
