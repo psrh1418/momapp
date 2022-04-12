@@ -30,7 +30,7 @@ class _VoiceHomeState extends State<VoiceHome> {
 
   @override
   void initState() {
-    super.initState();
+    super.initState();//branch test 2
   }
 
   void initSpeechRecognizer() {
